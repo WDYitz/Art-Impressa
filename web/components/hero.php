@@ -98,24 +98,22 @@ $slideCount = count($heroSlides);
     <?= svg_icon('<path d="m9 18 6-6-6-6"/>', 20) ?>
   </button>
 
-  <!-- ── Scroll-down prompt ─────────────────────────────────────────────── -->
+  <!-- ── Scroll-down prompt  -->
   <a href="#about"
-     aria-label="Rolar para Sobre Nós"
-     class="bounce-d absolute bottom-24 right-6 md:right-10 z-10 flex flex-col items-center gap-1 text-white/50 hover:text-[#C9973B] transition-colors">
+    aria-label="Rolar para Sobre Nós"
+    class="bounce-d absolute bottom-24 right-6 md:right-10 z-10 flex flex-col items-center gap-1 text-white/50 hover:text-[#C9973B] transition-colors">
     <span class="text-[0.7rem] tracking-[0.1em] font-light">SCROLL</span>
     <?= svg_icon('<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>', 16) ?>
   </a>
 
-  <!-- ── Stats bar (desktop only) ───────────────────────────────────────── -->
+  <!-- ── Stats bar (desktop only) -->
   <div class="absolute bottom-0 left-0 right-0 z-10 hidden md:flex" aria-label="Estatísticas da <?= esc(SITE_NAME) ?>">
     <div class="bg-[#C9973B] px-10 py-5 flex gap-12">
       <?php
-        $heroStats = [
-            ['value' => '15+',    'label' => 'Anos de Experiência'],
-            ['value' => '2.500+', 'label' => 'Clientes Satisfeitos'],
-            ['value' => '50k+',   'label' => 'Projetos Entregues'],
-        ];
-        foreach ($heroStats as $s):
+      $heroStats = [
+        ['value' => '20+', 'label' => 'Anos de Experiência'],
+      ];
+      foreach ($heroStats as $s):
       ?>
         <div class="text-[#0D0D0D]">
           <p style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;line-height:1;">
