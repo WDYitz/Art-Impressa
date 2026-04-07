@@ -1,6 +1,7 @@
-<?php // components/why-choose.php — Differentials section + trust metrics bar ?>
+<?php // components/why-choose.php — Differentials section + trust metrics bar 
+?>
 
-<!-- ===== WHY CHOOSE ===== -->
+<!-- WHY CHOOSE  -->
 <section
   id="why"
   class="bg-white py-28 scroll-mt-20"
@@ -16,18 +17,17 @@
         <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
       </div>
       <h2 class="text-[#0D0D0D] mb-5"
-          style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.2;">
-        Por Que Escolher <em class="not-italic italic text-[#C9973B]">Nossa Gráfica?</em>
+        style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.2;">
+        Por Que Escolher <em class="not-italic italic text-[#C9973B]">Nossos Serviços?</em>
       </h2>
       <p class="text-[#717182] max-w-xl mx-auto font-light" style="font-size:1rem;line-height:1.8;">
-        Mais de 15 anos de experiência, equipamentos de última geração e uma equipe apaixonada por resultado.
-        Conheça o que nos diferencia no mercado gráfico.
+        Descubra os benefícios que fazem a diferença.
       </p>
     </header>
 
     <!-- ── Reasons grid ───────────────────────────────────────────────── -->
     <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0 m-0"
-        aria-label="Razões para escolher a <?= esc(SITE_NAME) ?>">
+      aria-label="Por que escolher os serviços da <?= esc(SITE_NAME) ?>">
 
       <?php foreach ($reasons as $i => $reason): ?>
         <li class="reveal <?= stagger($i) ?>">
@@ -43,8 +43,12 @@
 
             <!-- Icon -->
             <div class="w-14 h-14 bg-[#C9973B]/10 group-hover:bg-[#C9973B] rounded-xl flex items-center justify-center mb-5 transition-colors duration-500 flex-shrink-0" aria-hidden="true">
-              <?= svg_icon(inner: $reason->svgInner, size: 24, stroke: COLOR_GOLD,
-                  extraAttrs: 'aria-hidden="true" class="group-hover:[stroke:#0D0D0D] transition-colors duration-500"') ?>
+              <?= svg_icon(
+                inner: $reason->svgInner,
+                size: 24,
+                stroke: COLOR_GOLD,
+                extraAttrs: 'aria-hidden="true" class="group-hover:[stroke:#0D0D0D] transition-colors duration-500"'
+              ) ?>
             </div>
 
             <!-- Highlight badge -->
@@ -54,13 +58,13 @@
 
             <!-- Title -->
             <h3 class="text-[#0D0D0D] group-hover:text-white mb-3 transition-colors duration-500"
-                style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;line-height:1.3;">
+              style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;line-height:1.3;">
               <?= esc($reason->title) ?>
             </h3>
 
             <!-- Description -->
             <p class="text-[#717182] group-hover:text-white/60 transition-colors duration-500 font-light"
-               style="font-size:0.88rem;line-height:1.75;">
+              style="font-size:0.88rem;line-height:1.75;">
               <?= esc($reason->description) ?>
             </p>
 

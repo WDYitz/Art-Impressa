@@ -1,8 +1,6 @@
 <?php // components/scripts.php — CDN scripts + IntersectionObserver animations ?>
-
 <!-- ── Flowbite 2.3.0 JS ──────────────────────────────────────────────────── -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
 <!-- ===== SCRIPTS ===== -->
 <script>
 (function () {
@@ -67,4 +65,3 @@
   if (quoteSection) quoteObserver.observe(quoteSection);
 })();
 </script>
-<!-- ===== /SCRIPTS ===== -->
