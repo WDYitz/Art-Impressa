@@ -48,8 +48,8 @@ $slideCount = count($heroSlides);
 
         <!-- Tag -->
         <div class="inline-flex items-center gap-2 mb-6">
-          <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
-          <span class="text-[#C9973B] uppercase tracking-widest text-[0.75rem] font-medium">
+          <span class="w-8 h-px bg-[#fff182]" aria-hidden="true"></span>
+          <span class="text-[#fff182] uppercase tracking-widest text-[0.75rem] font-medium">
             <?= esc($slide->tag) ?>
           </span>
         </div>
@@ -69,7 +69,7 @@ $slideCount = count($heroSlides);
     <?php endforeach; ?>
   </div>
 
-  <!-- ── Dot indicators ─────────────────────────────────────────────────── -->
+  <!-- Dot indicators  -->
   <div
     class="absolute bottom-24 md:bottom-28 left-1/2 -translate-x-1/2 z-10 flex items-center gap-3"
     role="tablist" aria-label="Slides do carrossel">
@@ -78,7 +78,7 @@ $slideCount = count($heroSlides);
         @click="go(<?= $i ?>)"
         role="tab"
         :aria-selected="cur === <?= $i ?>"
-        :class="cur === <?= $i ?> ? 'w-10 h-2 bg-[#C9973B]' : 'w-2 h-2 bg-white/40 hover:bg-white/70'"
+        :class="cur === <?= $i ?> ? 'w-10 h-2 bg-[#fff182]' : 'w-2 h-2 bg-white/40 hover:bg-white/70'"
         class="rounded-full transition-all duration-500">
       </button>
     <?php endfor; ?>
@@ -88,13 +88,13 @@ $slideCount = count($heroSlides);
   <button
     @click="prev()"
     aria-label="Slide anterior"
-    class="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border border-white/20 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white hover:border-[#C9973B] hover:text-[#C9973B] transition-all duration-200">
+    class="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border border-white/20 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white hover:border-[#fff182] hover:text-[#fff182] transition-all duration-200">
     <?= svg_icon('<path d="m15 18-6-6 6-6"/>', 20) ?>
   </button>
   <button
     @click="next()"
     aria-label="Próximo slide"
-    class="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border border-white/20 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white hover:border-[#C9973B] hover:text-[#C9973B] transition-all duration-200">
+    class="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full border border-white/20 bg-black/20 backdrop-blur-sm flex items-center justify-center text-white hover:border-[#fff182] hover:text-[#fff182] transition-all duration-200">
     <?= svg_icon('<path d="m9 18 6-6-6-6"/>', 20) ?>
   </button>
 
@@ -108,7 +108,7 @@ $slideCount = count($heroSlides);
 
   <!-- ── Stats bar (desktop only) -->
   <div class="absolute bottom-0 left-0 right-0 z-10 hidden md:flex" aria-label="Estatísticas da <?= esc(SITE_NAME) ?>">
-    <div class="bg-[#C9973B] px-10 py-5 flex gap-12">
+    <div class="bg-[#fff182] px-10 py-5 flex gap-12">
       <?php
       $heroStats = [
         ['value' => '20+', 'label' => 'Anos de Experiência'],

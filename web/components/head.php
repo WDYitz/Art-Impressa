@@ -11,7 +11,7 @@
   <meta name="keywords" content="<?= esc(SITE_KEYWORDS) ?>" />
   <meta name="author" content="<?= esc(SITE_NAME) ?>" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="theme-color" content="<?= esc(COLOR_GOLD) ?>" />
+  <meta name="theme-color" content="<?= esc(COLOR_BLUE) ?>" />
 
   <!-- ── Geo ─────────────────────────────────────────────────────────── -->
   <meta name="geo.region" content="BR-SP" />
@@ -54,9 +54,9 @@
       theme: {
         extend: {
           colors: {
-            gold: {
-              DEFAULT: '#C9973B',
-              light: '#E8C57D'
+            blue: {
+              DEFAULT: '#64d4f6',
+              light: '#E8C57D'  
             },
             ink: '#0D0D0D',
             cream: '#F7F4EF',

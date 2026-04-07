@@ -31,7 +31,7 @@
       <?php foreach ($navLinks as $link): ?>
         <li>
           <a href="<?= esc($link->href) ?>"
-             class="nav-ul text-white/75 hover:text-[#C9973B] transition-colors text-sm font-light tracking-wide">
+             class="nav-ul text-white/75 hover:text-[#fff182] transition-colors text-sm font-light tracking-wide">
             <?= esc($link->label) ?>
           </a>
         </li>
@@ -47,7 +47,7 @@
           @click="drop = !drop"
           :aria-expanded="drop.toString()"
           aria-haspopup="true"
-          class="flex items-center gap-2 px-5 py-2.5 bg-[#C9973B] hover:bg-[#E8C57D] text-[#0D0D0D] rounded-full text-sm font-semibold transition-colors duration-200">
+          class="flex items-center gap-2 px-5 py-2.5 bg-[#64d4f6]  text-[#0D0D0D] rounded-full text-sm font-semibold transition-colors duration-200">
           Solicitar Orçamento
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"

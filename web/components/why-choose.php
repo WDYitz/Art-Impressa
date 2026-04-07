@@ -12,13 +12,13 @@
     <!-- ── Section header ────────────────────────────────────────────── -->
     <header class="text-center mb-16 reveal">
       <div class="flex items-center justify-center gap-3 mb-5">
-        <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
-        <span class="text-[#C9973B] uppercase tracking-widest text-[0.75rem] font-medium">Diferenciais</span>
-        <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
+        <span class="w-8 h-px bg-[<?= COLOR_BLUE ?>]" aria-hidden="true"></span>
+        <span class="text-[<?= COLOR_BLUE ?>] uppercase tracking-widest text-[0.75rem] font-medium">Diferenciais</span>
+        <span class="w-8 h-px bg-[<?= COLOR_BLUE ?>]" aria-hidden="true"></span>
       </div>
       <h2 class="text-[#0D0D0D] mb-5"
         style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.2;">
-        Por Que Escolher <em class="not-italic italic text-[#C9973B]">Nossos Serviços?</em>
+        Por Que Escolher <em class="not-italic italic text-[<?= COLOR_BLUE ?>]">Nossos Serviços?</em>
       </h2>
       <p class="text-[#717182] max-w-xl mx-auto font-light" style="font-size:1rem;line-height:1.8;">
         Descubra os benefícios que fazem a diferença.
@@ -42,17 +42,17 @@
             </div>
 
             <!-- Icon -->
-            <div class="w-14 h-14 bg-[#C9973B]/10 group-hover:bg-[#C9973B] rounded-xl flex items-center justify-center mb-5 transition-colors duration-500 flex-shrink-0" aria-hidden="true">
+            <div class="w-14 h-14 bg-[#C9973B]/10 group-hover:bg-[<?= COLOR_PINK ?>] rounded-xl flex items-center justify-center mb-5 transition-colors duration-500 flex-shrink-0" aria-hidden="true">
               <?= svg_icon(
                 inner: $reason->svgInner,
                 size: 24,
-                stroke: COLOR_GOLD,
+                stroke: COLOR_PINK,
                 extraAttrs: 'aria-hidden="true" class="group-hover:[stroke:#0D0D0D] transition-colors duration-500"'
               ) ?>
             </div>
 
             <!-- Highlight badge -->
-            <span class="inline-block px-3 py-1 bg-[#C9973B]/10 group-hover:bg-[#C9973B]/20 text-[#C9973B] rounded-full mb-3 transition-colors text-[0.7rem] font-semibold tracking-wider">
+            <span class="inline-block px-3 py-1 bg-[#C9973B]/10 group-hover:bg-[<?= COLOR_PINK ?>]/20 text-[<?= COLOR_PINK ?>] rounded-full mb-3 transition-colors text-[0.7rem] font-semibold tracking-wider">
               <?= esc($reason->highlight) ?>
             </span>
 
@@ -75,14 +75,14 @@
 
     </ul><!-- /grid -->
 
-    <!-- ── Trust metrics bar ─────────────────────────────────────────── -->
+    <!-- ── Trust metrics bar -->
     <div
       class="mt-20 bg-[#0D0D0D] rounded-2xl p-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center reveal"
       role="list" aria-label="Métricas de qualidade">
 
       <?php foreach ($trustStats as $stat): ?>
         <div role="listitem">
-          <p style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;color:#C9973B;line-height:1;">
+          <p style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;color:<?= COLOR_YELLOW ?>;line-height:1;">
             <?= esc($stat->value) ?>
           </p>
           <p class="mt-2 text-white/60 text-[0.82rem] font-light tracking-wide">

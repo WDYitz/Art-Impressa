@@ -22,9 +22,9 @@ $contactCards = [
     <!-- Section header  -->
     <header class="text-center mb-16 reveal">
       <div class="flex items-center justify-center gap-3 mb-5">
-        <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
-        <span class="text-[#C9973B] uppercase tracking-widest text-[0.75rem] font-medium">Entre em Contato</span>
-        <span class="w-8 h-px bg-[#C9973B]" aria-hidden="true"></span>
+        <span class="w-8 h-px bg-[<?= COLOR_BLUE ?>]" aria-hidden="true"></span>
+        <span class="text-[<?= COLOR_BLUE ?>] uppercase tracking-widest text-[0.75rem] font-medium">Entre em Contato</span>
+        <span class="w-8 h-px bg-[<?= COLOR_BLUE ?>]" aria-hidden="true"></span>
       </div>
       <h2 class="text-[#0D0D0D]"
         style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.2;">
@@ -40,9 +40,9 @@ $contactCards = [
         </p>
         <address class="not-italic grid grid-cols-1 sm:grid-cols-2 gap-4" aria-label="Informações de contato">
           <?php foreach ($contactCards as $idx => $card): ?>
-            <div class="reveal <?= stagger($idx, 2) ?> bg-white p-5 rounded-xl border border-[#E8E0D5] hover:border-[#C9973B]/40 transition-colors">
-              <div class="w-10 h-10 bg-[#C9973B]/10 rounded-lg flex items-center justify-center mb-3" aria-hidden="true">
-                <?= svg_icon(inner: $card['svgInner'], size: 16, stroke: COLOR_GOLD) ?>
+            <div class="reveal <?= stagger($idx, 2) ?> bg-white p-5 rounded-xl border border-[#E8E0D5] hover:border-[#64d4f6]/40 transition-colors">
+              <div class="w-10 h-10 bg-[#64d4f6]/10 rounded-lg flex items-center justify-center mb-3" aria-hidden="true">
+                <?= svg_icon(inner: $card['svgInner'], size: 16, stroke: COLOR_BLUE) ?>
               </div>
               <p class="text-[#0D0D0D] font-semibold text-[0.85rem] mb-1"><?= esc($card['label']) ?></p>
               <p class="text-[#717182] font-light text-[0.82rem]" style="line-height:1.6;">

@@ -27,7 +27,9 @@ const SITE_PHONE_LABEL = '(11) 99855-7757';
 const SITE_EMAIL = 'eduardoartgraf@uol.com.br';
 const SITE_ADDRESS = 'Avenida Jaguaribe, 353 - São Paulo - SP 06050-020';
 const FOUNDING_YEAR = 2004;
-const COLOR_GOLD = '#C9973B';
+const COLOR_BLUE = '#64d4f6';
+const COLOR_YELLOW = '#fff182';
+const COLOR_PINK = '#ff6f91';
 const COLOR_INK = '#0D0D0D';
 const COLOR_WA  = '#25D366';
 /** WhatsApp brand SVG path — shared across navbar, contact and footer. */
@@ -221,9 +223,9 @@ $dropdownContacts = [
         svgHtml: svg_icon(
             inner: '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
             size: 14,
-            stroke: COLOR_GOLD,
+            stroke: COLOR_BLUE,
         ),
-        iconBgClass: 'bg-[#C9973B]/10',
+        iconBgClass: 'bg-[#64d4f6]/10',
         label: 'E-mail',
         value: 'eduardoartgraf@uol.com.br',
         href: 'mailto:eduardoartgraf@uol.com.br',
@@ -233,9 +235,9 @@ $dropdownContacts = [
         svgHtml: svg_icon(
             inner: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.9 3.39 2 2 0 0 1 3.89 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
             size: 14,
-            stroke: COLOR_GOLD,
+            stroke: COLOR_BLUE,
         ),
-        iconBgClass: 'bg-[#C9973B]/10',
+        iconBgClass: 'bg-[#64d4f6]/10',
         label: 'Telefone',
         value: '(11) 3448-2186',
         href: 'tel:+551134482186',
