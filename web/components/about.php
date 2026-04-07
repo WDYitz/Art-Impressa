@@ -1,6 +1,7 @@
-<?php // components/about.php — About section with highlights grid ?>
+<?php // components/about.php — About section with highlights grid 
+?>
 
-<!-- ===== ABOUT ===== -->
+<!-- ABOUT  -->
 <section
   id="about"
   class="bg-[#F7F4EF] py-28 overflow-visible scroll-mt-20"
@@ -13,7 +14,7 @@
       <div class="relative reveal-left">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="aspect-ratio:4/5;">
           <img
-            src="https://images.unsplash.com/photo-1742203101719-c3644e05936e?w=1080&q=80"
+            src="https://images.unsplash.com/photo-1716540103530-cc33cdd20cde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Equipe da <?= esc(SITE_NAME) ?> trabalhando na produção gráfica em São Paulo"
             class="w-full h-full object-cover"
             loading="lazy" />
@@ -24,7 +25,7 @@
           aria-label="15 anos de experiência"
           class="reveal-scale d5 absolute -bottom-8 -right-4 md:-right-8 bg-[#0D0D0D] text-white p-6 rounded-2xl shadow-2xl w-48 md:w-52">
           <p style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;color:#C9973B;line-height:1;" aria-hidden="true">
-            15+
+            20+
           </p>
           <p class="text-[0.85rem] font-light opacity-80 mt-2" style="line-height:1.4;">
             Anos de excelência em impressão gráfica
@@ -45,23 +46,26 @@
         </div>
 
         <h2 class="text-[#0D0D0D] mb-6"
-            style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.2;">
+          style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.2;">
           Transformamos Ideias em
           <em class="not-italic italic text-[#C9973B]">Impressões Inesquecíveis</em>
         </h2>
 
         <p class="text-[#4A4A4A] mb-5 font-light" style="font-size:1rem;line-height:1.8;">
-          Fundada há mais de 15 anos, a <strong class="font-semibold text-[#0D0D0D]"><?= esc(SITE_NAME) ?></strong>
-          nasceu da paixão pela arte gráfica e do compromisso com a qualidade. Somos uma gráfica completa,
-          combinando tecnologia de ponta com o olhar artístico de uma equipe apaixonada pelo que faz.
+          Somos uma empresa com mais de 20 anos de experiência no mercado gráfico, atuando desde 2004.
         </p>
         <p class="text-[#4A4A4A] mb-10 font-light" style="font-size:1rem;line-height:1.8;">
-          Do cartão de visita ao outdoor, do convite de casamento à embalagem personalizada — cada trabalho
-          é tratado como uma obra de arte, com atenção minuciosa aos detalhes e fidelidade às cores originais.
+          Visando atender empresas de diferentes portes e segmentos, trazendo inovação e personalidade em seus produtos, transformando suas ideias em arte.
+        </p>
+        <p class="text-[#4A4A4A] mb-5 font-light" style="font-size:1rem;line-height:1.8;">
+          A Art Impressa busca a melhor qualidade e satisfação de seus clientes, desde o atendimento até o resultado final.
+        </p>
+        <p class="text-[#4A4A4A] mb-5 font-light" style="font-size:1rem;line-height:1.8;">
+          Utilizando a tecnologia como uma ferramenta primordial em nosso trabalho, podemos garantir a excelência dos nossos serviços.
         </p>
 
         <!-- Highlights grid -->
-        <ul class="grid grid-cols-2 gap-4 list-none p-0 m-0" aria-label="Diferenciais da <?= esc(SITE_NAME) ?>">
+        <!-- <ul class="grid grid-cols-2 gap-4 list-none p-0 m-0" aria-label="Diferenciais da <?= esc(SITE_NAME) ?>">
           <?php foreach ($highlights as $i => $h): ?>
             <li class="reveal <?= stagger($i) ?> flex items-start gap-3 bg-white p-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9973B]/50 transition-colors">
               <div class="w-9 h-9 bg-[#C9973B]/10 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
@@ -73,7 +77,7 @@
               </div>
             </li>
           <?php endforeach; ?>
-        </ul>
+        </ul> -->
 
       </div><!-- /text column -->
     </div>

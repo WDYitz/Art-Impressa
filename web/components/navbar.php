@@ -18,22 +18,15 @@
     class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-[72px]"
     aria-label="Navegação principal">
 
-    <!-- ── Logo ──────────────────────────────────────────────────────── -->
+    <!-- Logo -->
     <a href="#hero" class="flex items-center gap-3 group" aria-label="<?= esc(SITE_NAME) ?> – página inicial">
-      <div class="w-10 h-10 bg-[#C9973B] group-hover:bg-[#E8C57D] rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300" aria-hidden="true">
-        <?= svg_icon(
-            inner:  '<polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/>',
-            size:   20,
-            stroke: COLOR_INK,
-        ) ?>
+      <div class="w-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300" aria-hidden="true">
+        <img src="web/assets/img/art-impressa-logo-sem-texto.png" alt="Logo Art Impressa">
       </div>
-      <div>
-        <span class="block text-white font-serif text-[1.2rem] leading-tight"><?= esc(SITE_NAME) ?></span>
-        <span class="block text-[#C9973B] text-[0.62rem] tracking-[0.15em] uppercase"><?= esc(SITE_TAGLINE) ?></span>
-      </div>
+      
     </a>
 
-    <!-- ── Desktop nav links ─────────────────────────────────────────── -->
+    <!-- Desktop nav links-->
     <ul class="hidden md:flex items-center gap-7 list-none" role="list">
       <?php foreach ($navLinks as $link): ?>
         <li>
@@ -45,7 +38,7 @@
       <?php endforeach; ?>
     </ul>
 
-    <!-- ── CTA dropdown + hamburger ──────────────────────────────────── -->
+    <!-- CTA dropdown + hamburger  -->
     <div class="flex items-center gap-3">
 
       <!-- Desktop: "Solicitar Orçamento" dropdown -->
@@ -113,7 +106,7 @@
           </div>
 
           <div class="px-5 py-3 border-t border-white/10 bg-white/[0.03]">
-            <p class="text-white/30 text-center text-[0.72rem] font-light">Seg–Sex 08h–18h · Sáb 08h–13h</p>
+            <p class="text-white/30 text-center text-[0.72rem] font-light">Seg–Sex 08h–18h · Sáb-Dom Fechado</p>
           </div>
         </div>
       </div><!-- /dropdown -->
@@ -137,7 +130,7 @@
     </div><!-- /cta + hamburger -->
   </nav>
 
-  <!-- ── Mobile menu ───────────────────────────────────────────────────── -->
+  <!--  Mobile menu -->
   <div
     x-show="mob" x-cloak
     x-transition:enter="transition ease-out duration-200"
