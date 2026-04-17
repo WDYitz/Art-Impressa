@@ -84,7 +84,7 @@ $slideCount = count($heroSlides);
     <?php endfor; ?>
   </div>
 
-  <!-- ── Arrow controls ─────────────────────────────────────────────────── -->
+  <!-- Arrow controls  -->
   <button
     @click="prev()"
     aria-label="Slide anterior"

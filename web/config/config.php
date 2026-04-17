@@ -247,7 +247,7 @@ $dropdownContacts = [
 //  Hero slides 
 $heroSlides = [
     new HeroSlide(
-        image: 'https://images.unsplash.com/photo-1758183961426-88d64eb5f787?w=1920&q=80',
+        image: './web/assets/img/graf-1.jpeg',
         alt: 'Máquina de impressão offset em operação',
         tag: 'Impressão Offset',
         title: "Precisão que\nFaz a Diferença",
@@ -255,7 +255,7 @@ $heroSlides = [
         index: 0,
     ),
     new HeroSlide(
-        image: 'https://images.unsplash.com/photo-1581508512961-0e3b9524db40?w=1920&q=80',
+        image: './web/assets/img/graf-2.jpeg',
         alt: 'Impressora de grande formato para banners',
         tag: 'Grande Formato',
         title: "Do Menor ao\nMaior Projeto",
