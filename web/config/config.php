@@ -195,11 +195,12 @@ function stagger(int $index, int $cols = 3): string
 // DATA
 //  Navigation links 
 $navLinks = [
-    new NavLink('Início',      '#hero'),
-    new NavLink('Sobre Nós',   '#about'),
-    new NavLink('Produtos',    '#products'),
+    new NavLink('Início', '#hero'),
+    new NavLink('Clientes','#clients'),
+    new NavLink('Sobre Nós','#about'),
+    new NavLink('Produtos', '#products'),
     new NavLink('Por que Nós', '#why'),
-    new NavLink('Contato',     '#contact'),
+    new NavLink('Contato','#contact'),
 ];
 // Navbar dropdown contact items 
 $dropdownContacts = [

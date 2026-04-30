@@ -21,7 +21,7 @@
         <!-- Social links -->
         <nav aria-label="Redes sociais da <?= esc(SITE_NAME) ?>">
           <ul class="flex gap-3 list-none p-0 m-0">
-            <?php foreach ($socialLinks as $s): ?>
+            <?php foreach (($socialLinks ?? []) as $s): ?>
               <li>
                 <a href="<?= esc($s->href) ?>"
                   target="_blank" rel="noopener noreferrer"
@@ -37,7 +37,7 @@
       </div><!-- /brand -->
 
       <!-- Link columns -->
-      <?php foreach ($footerGroups as $group): ?>
+      <?php foreach (($footerGroups ?? []) as $group): ?>
         <nav aria-label="Links de <?= esc($group->title) ?>">
           <h3 class="text-white mb-4 font-semibold text-[0.9rem]"><?= esc($group->title) ?></h3>
           <ul class="flex flex-col gap-2.5 list-none p-0 m-0">

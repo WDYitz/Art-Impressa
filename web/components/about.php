@@ -63,7 +63,7 @@
 
         <!-- Highlights grid -->
         <!-- <ul class="grid grid-cols-2 gap-4 list-none p-0 m-0" aria-label="Diferenciais da <?= esc(SITE_NAME) ?>">
-          <?php foreach ($highlights as $i => $h): ?>
+          <?php foreach ($highlights ?? [] as $i => $h): ?>
             <li class="reveal <?= stagger($i) ?> flex items-start gap-3 bg-white p-4 rounded-xl border border-[#E8E0D5] hover:border-[#64d4f6]/50 transition-colors">
               <div class="w-9 h-9 bg-[#64d4f6]/10 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
                 <?= svg_icon(inner: $h->svgInner, size: 16, stroke: COLOR_BLUE) ?>

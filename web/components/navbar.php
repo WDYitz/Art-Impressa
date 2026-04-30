@@ -28,10 +28,10 @@
 
     <!-- Desktop nav links-->
     <ul class="hidden md:flex items-center gap-7 list-none" role="list">
-      <?php foreach ($navLinks as $link): ?>
+      <?php foreach ($navLinks ?? [] as $link): ?>
         <li>
           <a href="<?= esc($link->href) ?>"
-             class="nav-ul text-white/75 hover:text-[#fff182] transition-colors text-sm font-light tracking-wide">
+             class="nav-ul text-white/75 hover:text-white/80 transition-colors text-sm font-light ">
             <?= esc($link->label) ?>
           </a>
         </li>
@@ -73,9 +73,10 @@
           </div>
 
           <div class="p-2">
-            <?php foreach ($dropdownContacts as $item): ?>
+            <?php $dropdownContactsList = $dropdownContacts ?? []; ?>
+            <?php foreach ($dropdownContactsList as $item): ?>
               <?php $isWa = str_starts_with($item->href, 'https://wa.me'); ?>
-              <?php if ($isWa && $item !== $dropdownContacts[0]): ?>
+              <?php if ($isWa && $item !== ($dropdownContactsList[0] ?? null)): ?>
                 <!-- Separator before non-WA items -->
               <?php endif; ?>
               <?php
@@ -145,7 +146,7 @@
     <nav class="px-6 py-6">
       <!-- Nav links -->
       <ul class="flex flex-col gap-1 list-none mb-6">
-        <?php foreach ($navLinks as $link): ?>
+        <?php foreach ($navLinks ?? [] as $link): ?>
           <li>
             <a href="<?= esc($link->href) ?>"
                @click="mob = false"
@@ -159,7 +160,7 @@
       <!-- Contact items -->
       <p class="text-white/30 uppercase tracking-widest text-[0.65rem] mb-3">Solicitar Orçamento</p>
       <div class="flex flex-col gap-2">
-        <?php foreach ($dropdownContacts as $item): ?>
+        <?php foreach ($dropdownContactsList ?? ($dropdownContacts ?? []) as $item): ?>
           <a href="<?= esc($item->href) ?>"
              <?= $item->external ? 'target="_blank" rel="noopener noreferrer"' : '' ?>
              @click="mob = false"

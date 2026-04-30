@@ -7,6 +7,8 @@
 // 2. Inclua este arquivo no seu layout principal (antes do </body>)
 // 3. Cole o CSS dentro do seu <style> global ou arquivo CSS
 // ============================================================
+
+$products = $products ?? [];
 ?>
 
 <!-- ===== PRODUCTS ===== -->

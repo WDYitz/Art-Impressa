@@ -1,4 +1,5 @@
 <?php // components/hero.php — full-screen Alpine.js carousel
+$heroSlides = $heroSlides ?? [];
 $slideCount = count($heroSlides);
 ?>
 

@@ -30,6 +30,7 @@ require_once __DIR__ . '/web/config/config.php';
 
   <main id="main-content">
     <?php require __DIR__ . '/web/components/hero.php'; ?>
+    <?php require __DIR__ . '/web/components/carousel.php'; ?>
     <?php require __DIR__ . '/web/components/about.php'; ?>
     <?php require __DIR__ . '/web/components/products.php'; ?>
     <?php require __DIR__ . '/web/components/why-choose.php'; ?>
