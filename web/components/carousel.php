@@ -158,7 +158,7 @@ function render_brands_carousel(array $brands, array $options = []): string
 
       .bc-subtitle {
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         color: var(--text-sub);
         line-height: 1.6;
         max-width: 460px;
