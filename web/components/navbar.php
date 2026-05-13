@@ -20,8 +20,8 @@
 
     <!-- Logo -->
     <a href="#hero" class="flex items-center gap-3 group" aria-label="<?= esc(SITE_NAME) ?> – página inicial">
-      <div class="w-12 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300" aria-hidden="true">
-        <img src="web/assets/img/art-impressa-logo-sem-texto.png" alt="Logo Art Impressa">
+      <div class="w-40 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300" aria-hidden="true">
+        <img src="web/assets/img/art-impressa-logo.png" alt="Logo Art Impressa">
       </div>
       
     </a>

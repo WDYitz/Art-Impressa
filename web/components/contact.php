@@ -75,7 +75,7 @@ $contactCards = [
             WhatsApp – (11) 99827-0726
           </a>
           <!-- E-mail -->
-          <a href="mailto:eduardoartgraf@uol.com.br"
+          <a href="mailto:<?= esc(SITE_EMAIL) ?>"
             aria-label="E-mail para orçamento"
             class="flex items-center justify-center gap-3 bg-[#C9973B]/10 hover:bg-[#C9973B] text-[#C9973B] hover:text-[#0D0D0D] border border-[#C9973B]/30 rounded-xl py-3.5 transition-all font-semibold text-[0.9rem]">
             <?= svg_icon(
@@ -83,7 +83,7 @@ $contactCards = [
               size: 16,
               stroke: 'currentColor',
             ) ?>
-            eduardoartgraf@uol.com.br
+            <?= esc(SITE_EMAIL) ?>
           </a>
         </div>
       </div><!-- /right -->

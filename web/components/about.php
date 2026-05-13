@@ -11,7 +11,7 @@
       <div class="relative reveal-left">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="aspect-ratio:4/5;">
           <img
-            src="https://images.unsplash.com/photo-1716540103530-cc33cdd20cde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="web/assets/img/embalagem_personalizada.png"
             alt="Equipe da <?= esc(SITE_NAME) ?> trabalhando na produção gráfica em São Paulo"
             class="w-full h-full object-cover"
             loading="lazy" />
@@ -19,7 +19,7 @@
 
         <!-- Floating stat card -->
         <aside
-          aria-label="15 anos de experiência"
+          aria-label="mais de 20 anos de experiência"
           class="reveal-scale d5 absolute -bottom-8 -right-4 md:-right-8 bg-[#0D0D0D] text-white p-6 rounded-2xl shadow-2xl w-48 md:w-52">
           <p style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;color:#64d4f6;line-height:1;" aria-hidden="true">
             20+
@@ -29,11 +29,11 @@
           </p>
         </aside>
 
-        <!-- Decorative gold border -->
+        <!-- Decorative  border -->
         <div class="absolute -top-4 -left-4 w-24 h-24 border-2 border-[#fc74ba] rounded-2xl -z-0 opacity-40" aria-hidden="true"></div>
       </div>
 
-      <!-- ── Text column ─────────────────────────────────────────────── -->
+      <!-- Text column  -->
       <div class="reveal-right mt-12 lg:mt-0">
 
         <!-- Eyebrow -->

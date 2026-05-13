@@ -1,17 +1,8 @@
 <?php
-// ============================================================
-// INSTRUÇÕES DE INTEGRAÇÃO
-// 1. Adicione os dados de fotos ao array $products:
-//    $product->photos = ['url1.jpg', 'url2.jpg', ...];
-//    $product->photos_alt = ['Alt 1', 'Alt 2', ...]; // opcional
-// 2. Inclua este arquivo no seu layout principal (antes do </body>)
-// 3. Cole o CSS dentro do seu <style> global ou arquivo CSS
-// ============================================================
-
-$products = $products ?? [];
+ $products ??= [];
 ?>
 
-<!-- ===== PRODUCTS ===== -->
+<!--  PRODUCTS  -->
 <section
   id="products"
   class="bg-[#0D0D0D] py-28 scroll-mt-20"
@@ -52,7 +43,7 @@ $products = $products ?? [];
             data-product-photos='<?= json_encode($product->photos ?? []) ?>'
             data-product-photos-alt='<?= json_encode($product->photos_alt ?? []) ?>'>
             <div class="p-7 flex flex-col gap-4 h-full">
-              <!-- Category + badge + arrow row -->
+              <!-- Category -->
               <div class="flex items-center justify-between">
                 <?php if ($product->photos): ?>
                   <img src="<?= esc($product->photos[0]) ?>" alt="<?= esc($product->name) ?>" class="w-14 h-14 object-cover rounded-lg mb-3">
@@ -64,7 +55,7 @@ $products = $products ?? [];
                       <?= esc($product->badge->value) ?>
                     </span>
                   <?php endif; ?> -->
-                  <!-- Ícone de galeria (substitui o de seta) -->
+                  <!-- Ícone de galeria -->
                   <div class="w-8 h-8 bg-[#fff182]/10 group-hover:bg-[#fff182] rounded-full flex items-center justify-center
                                opacity-0 group-hover:opacity-100 transition-all duration-300 product-gallery-icon" aria-hidden="true">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -85,7 +76,7 @@ $products = $products ?? [];
                 style="font-size:0.88rem;line-height:1.75;">
                 <?= esc($product->description) ?>
               </p> -->
-              <!-- "Ver fotos" hint -->
+              <!-- "Ver fotos"  -->
               <div class="flex items-center gap-1.5 transition-opacity duration-300 mt-1">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ff6f91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="11" cy="11" r="8" />
@@ -189,7 +180,7 @@ $products = $products ?? [];
     <p class="pgm-description" id="pgm-description"></p>
   </div>
 </div>
-<!-- ===== /MODAL ===== -->
+<!--  /MODAL  -->
 <script>
   (function() {
     'use strict';
@@ -202,8 +193,8 @@ $products = $products ?? [];
       minZoom: 1,
       maxZoom: 4,
       zoomStep: 0.5,
-      panX: 0,
-      panY: 0,
+      panX: 50,
+      panY: 50,
       isDragging: false,
       dragStartX: 0,
       dragStartY: 0,

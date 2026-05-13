@@ -21,7 +21,7 @@ $slideCount = count($heroSlides);
   <!-- Gold left accent line -->
   <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent via-[#C9973B] to-transparent opacity-60 z-10" aria-hidden="true"></div>
 
-  <!-- ── Slides ────────────────────────────────────────────────────────── -->
+  <!-- Slides-->
   <?php foreach ($heroSlides as $slide): ?>
     <div class="slide" :class="cur === <?= $slide->index ?> ? 'opacity-100 z-[2]' : 'opacity-0 z-[1]'" aria-hidden="true">
       <img
@@ -34,7 +34,7 @@ $slideCount = count($heroSlides);
     </div>
   <?php endforeach; ?>
 
-  <!-- ── Slide content overlays ─────────────────────────────────────────── -->
+  <!-- Slide content overlays -->
   <div class="relative z-10 h-full flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-7xl">
     <?php foreach ($heroSlides as $slide): ?>
       <div
@@ -99,7 +99,7 @@ $slideCount = count($heroSlides);
     <?= svg_icon('<path d="m9 18 6-6-6-6"/>', 20) ?>
   </button>
 
-  <!-- ── Scroll-down prompt  -->
+  <!--  Scroll-down prompt -->
   <a href="#about"
     aria-label="Rolar para Sobre Nós"
     class="bounce-d absolute bottom-24 right-6 md:right-10 z-10 flex flex-col items-center gap-1 text-white/50 hover:text-[#C9973B] transition-colors">
@@ -107,7 +107,7 @@ $slideCount = count($heroSlides);
     <?= svg_icon('<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>', 16) ?>
   </a>
 
-  <!-- ── Stats bar (desktop only) -->
+  <!-- Stats bar (desktop only) -->
   <div class="absolute bottom-0 left-0 right-0 z-10 hidden md:flex" aria-label="Estatísticas da <?= esc(SITE_NAME) ?>">
     <div class="bg-[#fff182] px-10 py-5 flex gap-12">
       <?php

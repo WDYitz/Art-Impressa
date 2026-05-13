@@ -24,7 +24,7 @@ const SITE_KEYWORDS  = 'gráfica São Paulo ,grafica, art impresssa, graficas, i
 const SITE_OG_IMAGE = '';
 const SITE_PHONE = '+55-11-99855-7757';
 const SITE_PHONE_LABEL = '(11) 99855-7757';
-const SITE_EMAIL = 'eduardoartgraf@uol.com.br';
+const SITE_EMAIL = 'graficaartimpressa@uol.com.br';
 const SITE_ADDRESS = 'Avenida Jaguaribe, 353 - São Paulo - SP 06050-020';
 const FOUNDING_YEAR = 2004;
 const COLOR_BLUE = '#64d4f6';
@@ -228,8 +228,8 @@ $dropdownContacts = [
         ),
         iconBgClass: 'bg-[#64d4f6]/10',
         label: 'E-mail',
-        value: 'eduardoartgraf@uol.com.br',
-        href: 'mailto:eduardoartgraf@uol.com.br',
+        value: SITE_EMAIL,
+        href: 'mailto:' . SITE_EMAIL,
         external: false,
     ),
     new DropdownContact(
@@ -248,7 +248,7 @@ $dropdownContacts = [
 //  Hero slides 
 $heroSlides = [
     new HeroSlide(
-        image: './web/assets/img/graf-1.jpeg',
+        image: './web/assets/img/graf-2.jpeg',
         alt: 'Máquina de impressão offset em operação',
         tag: 'Impressão Offset',
         title: "Precisão que\nFaz a Diferença",
@@ -256,7 +256,7 @@ $heroSlides = [
         index: 0,
     ),
     new HeroSlide(
-        image: './web/assets/img/graf-2.jpeg',
+        image: './web/assets/img/graf-1.jpeg',
         alt: 'Impressora de grande formato para banners',
         tag: 'Grande Formato',
         title: "Do Menor ao\nMaior Projeto",

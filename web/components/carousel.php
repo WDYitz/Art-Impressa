@@ -32,7 +32,7 @@ function render_brands_carousel(array $brands, array $options = []): string
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brands Carousel</title>
+    <title>Clientes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet" />
@@ -49,7 +49,7 @@ function render_brands_carousel(array $brands, array $options = []): string
         --accent: #64d4f6;
         --accent-2: #a78bfa;
         --text-hero: #ffffff;
-        --text-sub: rgba(255, 255, 255, 0.45);
+        --text-sub: rgb(167, 167, 167);
         --logo-filter: brightness(0) invert(1);
         --logo-opacity: 0.55;
         --logo-hover: 1;
@@ -84,7 +84,7 @@ function render_brands_carousel(array $brands, array $options = []): string
         flex-direction: column;
         justify-content: center;
         background: var(--bg);
-        padding: 90px 0 100px;
+        padding: 120px 0;
         overflow: hidden;
         font-family: 'DM Sans', sans-serif;
         position: relative;
@@ -140,7 +140,7 @@ function render_brands_carousel(array $brands, array $options = []): string
       }
 
       .bc-title {
-        font-family: 'Syne', sans-serif;
+        font-family: 'Syne';
         font-size: clamp(28px, 5vw, 50px);
         font-weight: 800;
         color: var(--text-hero);
@@ -157,7 +157,7 @@ function render_brands_carousel(array $brands, array $options = []): string
       }
 
       .bc-subtitle {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 300;
         color: var(--text-sub);
         line-height: 1.6;
@@ -278,7 +278,7 @@ function render_brands_carousel(array $brands, array $options = []): string
 
       .bc-logo-wrap img {
         max-width: 100%;
-        max-height: 36px;
+        max-height: 50px;
         object-fit: contain;
         filter: var(--logo-filter);
         opacity: var(--logo-opacity);
@@ -373,10 +373,10 @@ function render_brands_carousel(array $brands, array $options = []): string
       <p class="bc-subtitle"><?php echo htmlspecialchars($subtitle); ?></p>
     </div>
 
-    <!-- Carousel Stage -->
+    <!-- Carousel -->
     <div class="bc-stage" role="region" aria-label="Logos carousel" aria-roledescription="carousel">
 
-      <!-- Row 1 — forward -->
+      <!-- Row -->
       <div class="bc-row" aria-hidden="true">
         <div class="bc-track bc-card-size">
           <?php foreach ($track_brands as $brand): ?>
@@ -403,24 +403,21 @@ function render_brands_carousel(array $brands, array $options = []): string
           <?php endforeach; ?>
         </div>
       </div>
-    </div><!-- /.bc-stage -->
+    </div>
   </section>
 
 <?php
   return ob_get_clean();
 }
 
-
-/* ──────────────────────────────────────────────────────────────────────
- * DEMO — Remove or wrap in if(php_sapi_name() === 'cli') for production
- * ──────────────────────────────────────────────────────────────────────*/
 $demo_brands = [
-  ['name' => 'Interlab', 'logo' => '', 'url' => ''],
-  ['name' => 'Alamar', 'logo' => '', 'url' => ''],
-  ['name' => 'Tga', 'logo' => '', 'url' => ''],
-  ['name' => 'Confirme', 'logo' => '', 'url' => ''],
-  ['name' => 'Roldão', 'logo' => '', 'url' => ''],
-  ['name' => 'SleepHouse', 'logo' => '', 'url' => ''],
+  ['name' => 'Interlab', 'logo' => 'web/assets/img/clients/interlab.png', 'url' => ''],
+  ['name' => 'Renterol', 'logo' => 'web/assets/img/clients/renterol.png', 'url' => ''],
+  ['name' => 'Tga', 'logo' => 'web/assets/img/clients/tga.png', 'url' => ''],
+  ['name' => 'Confirme', 'logo' => 'web/assets/img/clients/confirme.png', 'url' => ''],
+  ['name' => 'Roldão', 'logo' => 'web/assets/img/clients/roldao.png', 'url' => ''],
+  ['name' => 'SleepHouse', 'logo' => 'web/assets/img/clients/sleep_house.png', 'url' => ''],
+  ['name' => 'Alamar', 'logo' => 'web/assets/img/clients/alamar.png', 'url' => ''],
 ];
 
 echo render_brands_carousel($demo_brands, [
