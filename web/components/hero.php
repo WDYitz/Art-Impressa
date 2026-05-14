@@ -1,9 +1,9 @@
-<?php // components/hero.php — full-screen Alpine.js carousel
-$heroSlides = $heroSlides ?? [];
+<?php
+$heroSlides ??= [];
 $slideCount = count($heroSlides);
 ?>
 
-<!-- ===== HERO ===== -->
+<!--  HERO SECTION -->
 <section
   id="hero"
   aria-label="Carrossel de destaque – <?= esc(SITE_NAME) ?>"
@@ -18,7 +18,7 @@ $slideCount = count($heroSlides);
   }"
   class="relative h-screen w-full overflow-hidden">
 
-  <!-- Gold left accent line -->
+  <!--  Left color blending -->
   <div class="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent via-[#C9973B] to-transparent opacity-60 z-10" aria-hidden="true"></div>
 
   <!-- Slides-->
@@ -34,7 +34,7 @@ $slideCount = count($heroSlides);
     </div>
   <?php endforeach; ?>
 
-  <!-- Slide content overlays -->
+  <!-- Slide content -->
   <div class="relative z-10 h-full flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-7xl">
     <?php foreach ($heroSlides as $slide): ?>
       <div
@@ -99,7 +99,7 @@ $slideCount = count($heroSlides);
     <?= svg_icon('<path d="m9 18 6-6-6-6"/>', 20) ?>
   </button>
 
-  <!--  Scroll-down prompt -->
+  <!--  Scroll-down -->
   <a href="#about"
     aria-label="Rolar para Sobre Nós"
     class="bounce-d absolute bottom-24 right-6 md:right-10 z-10 flex flex-col items-center gap-1 text-white/50 hover:text-[#C9973B] transition-colors">
@@ -107,7 +107,7 @@ $slideCount = count($heroSlides);
     <?= svg_icon('<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>', 16) ?>
   </a>
 
-  <!-- Stats bar (desktop only) -->
+  <!-- Stats bar -->
   <div class="absolute bottom-0 left-0 right-0 z-10 hidden md:flex" aria-label="Estatísticas da <?= esc(SITE_NAME) ?>">
     <div class="bg-[#fff182] px-10 py-5 flex gap-12">
       <?php
@@ -129,4 +129,3 @@ $slideCount = count($heroSlides);
   </div>
 
 </section>
-<!-- ===== /HERO ===== -->
